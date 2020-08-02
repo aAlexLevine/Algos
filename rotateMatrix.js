@@ -3,9 +3,9 @@
 // The original matrix should be unchanged. 
 // This function should work for both square and rectangular matrixes.
 
-// [[1, 2, 3],  ->  // [[8, 5, 2],
-//  [4, 5, 6],  ->  //  [7, 4, 1],
-//  [7, 8, 9]]  ->  //  [9, 6, 3]]
+// [[1, 2, 3],  ->  //  [[7, 4, 1],
+//  [4, 5, 6],  ->  //   [8, 5, 2],
+//  [7, 8, 9]]  ->  //   [9, 6, 3]]
 
 function rotateClockwise(matrix) {
   let col = 0;
