@@ -25,20 +25,18 @@ const longest_substring_with_k_distinct = function (str, k) {
     if (!isInHash && count < k) {
       distinctLetters[str[right]] = true;
       distinctLetters.count++;
-      currlength = right - left + 1;
+      currLength = right - left + 1;
       right++;
     } else if (isInHash) {
-      currlength = right - left + 1;
+      currLength = right - left + 1;
       right++;
     } else {
-      longest = Math.max(longest, currlength);
+      longest = Math.max(longest, currLength);
       distinctLetters = { count: 0 };
       left++;
       right = left;
     }
-    console.log({ right, left, distinctLetters });
   }
-
   return longest;
 };
 
